@@ -6,6 +6,10 @@ IS_PHONE := true
 PRODUCT_PACKAGES += \
     apns-conf.xml
 
+# SPN-CONF
+PRODUCT_COPY_FILES += \
+    vendor/aosp/prebuilt/common/etc/selective-spn-conf.xml:system/etc/selective-spn-conf.xml
+
 # Telephony packages
 PRODUCT_PACKAGES += \
     Stk \
@@ -18,7 +22,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 
 # Default ringtone
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.config.ringtone=The_big_adventure.ogg
+    ro.config.ringtone=Ring_Synth_04.ogg
 
 # Inherit full common PixelExperience stuff
 $(call inherit-product, vendor/aosp/config/common_full.mk)
