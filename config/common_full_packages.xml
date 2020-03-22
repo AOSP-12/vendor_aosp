@@ -10,6 +10,7 @@ PRODUCT_PACKAGES += \
     CertInstaller \
     Contacts \
     DeskClock \
+    Dialer \
     DocumentsUI \
     DownloadProviderUi \
     Email \
@@ -22,13 +23,15 @@ PRODUCT_PACKAGES += \
     Keyguard \
     LatinIME \
     Launcher3QuickStep \
+    libpac \
     ManagedProvisioning \
+    messaging \
+    MmsService \
     MtpDocumentsProvider \
     Music \
     PacProcessor \
-    libpac \
-    PrintSpooler \
     PrintRecommendationService \
+    PrintSpooler \
     ProxyHandler \
     SecureElement \
     Settings \
@@ -39,9 +42,4 @@ PRODUCT_PACKAGES += \
     Telecom \
     TeleService \
     Traceur \
-    VpnDialogs \
-    MmsService \
-    Dialer \
-    WallpaperPicker \
-    netutils-wrapper-1.0 \
-    messaging
+    VpnDialogs
