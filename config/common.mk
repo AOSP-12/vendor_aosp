@@ -69,7 +69,8 @@ DEVICE_PACKAGE_OVERLAYS += vendor/aosp/overlay/common
 
 # Themes
 PRODUCT_PACKAGES += \
-    ThemePicker
+    ThemePicker \
+    ThemesStub
 
 # Branding
 include vendor/aosp/config/branding.mk
