@@ -67,6 +67,21 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/aosp/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/aosp/overlay/common
 
+# Accents
+PRODUCT_PACKAGES += \
+    BlackAccent \
+    BlackTheme \
+    BlueAccent \
+    BrownAccent \
+    CyanAccent \
+    DarkTheme \
+    GreenAccent \
+    OrangeAccent \
+    PinkAccent \
+    PurpleAccent \
+    RedAccent \
+    YellowAccent
+
 # Themes
 PRODUCT_PACKAGES += \
     ThemePicker \
