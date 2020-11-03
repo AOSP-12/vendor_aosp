@@ -109,6 +109,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.face.sense_service=false
 endif
 
+# SystemUI plugins
+PRODUCT_PACKAGES += \
+    QuickAccessWallet
+
 # Branding
 include vendor/aosp/config/branding.mk
 
