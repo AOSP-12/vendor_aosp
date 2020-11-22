@@ -47,6 +47,12 @@ PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 PRODUCT_PACKAGES += \
     charger_res_images
 
+# Dex preopt
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    Launcher3QuickStep \
+    SystemUI \
+    NexusLauncherRelease
+
 # Filesystems tools
 PRODUCT_PACKAGES += \
     fsck.exfat \
