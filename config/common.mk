@@ -76,17 +76,22 @@ DEVICE_PACKAGE_OVERLAYS += vendor/aosp/overlay/common
 # Accents
 PRODUCT_PACKAGES += \
     BlackAccent \
-    BlackTheme \
     BlueAccent \
     BrownAccent \
     CyanAccent \
-    DarkTheme \
     GreenAccent \
     OrangeAccent \
     PinkAccent \
     PurpleAccent \
     RedAccent \
     YellowAccent
+
+# Fonts & Customizations
+PRODUCT_PACKAGES += \
+    BlackTheme \
+    LatoFont \
+    NavigationBarNoHint \
+    RubikFont
 
 # Themes
 PRODUCT_PACKAGES += \
