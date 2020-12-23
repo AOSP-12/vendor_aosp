@@ -20,9 +20,5 @@ PRODUCT_PACKAGES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     net.tethering.noprovisioning=true
 
-# Default ringtone
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.config.ringtone=Ring_Synth_04.ogg
-
 # Inherit full common AOSP stuff
 $(call inherit-product, vendor/aosp/config/common_full.mk)
