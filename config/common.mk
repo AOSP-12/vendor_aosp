@@ -91,7 +91,8 @@ PRODUCT_PACKAGES += \
 # Themes
 PRODUCT_PACKAGES += \
     ThemePicker \
-    ThemesStub
+    ThemesStub \
+    WallpapersOverlay
 
 # Face Unlock
 ifeq ($(TARGET_FACE_UNLOCK), true)
