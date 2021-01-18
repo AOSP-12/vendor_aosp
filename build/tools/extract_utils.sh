@@ -1264,7 +1264,7 @@ function oat2dex() {
     fi
 
     if [ -z "$PATCHELF" ]; then
-        export PATCHELF="$AOSP_ROOT"/prebuilts/tools-custom/${HOST}-x86/bin/patchelf
+        export PATCHELF="$AOSP_ROOT"/prebuilts/extract-tools/${HOST}-x86/bin/patchelf
     fi
 
     # Extract existing boot.oats to the temp folder
