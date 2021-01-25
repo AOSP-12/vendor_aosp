@@ -113,6 +113,9 @@ endif
 PRODUCT_PACKAGES += \
     QuickAccessWallet
 
+# Charger images
+include vendor/aosp/config/charger-res.mk
+
 # Branding
 include vendor/aosp/config/branding.mk
 
