@@ -113,6 +113,10 @@ endif
 PRODUCT_PACKAGES += \
     QuickAccessWallet
 
+# TouchGestures
+PRODUCT_PACKAGES += \
+    TouchGestures
+
 # Charger images
 include vendor/aosp/config/charger-res.mk
 
