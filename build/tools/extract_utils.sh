@@ -1273,8 +1273,19 @@ function oat2dex() {
         export CDEXCONVERTER="$AOSP_ROOT"/prebuilts/tools-custom/"${HOST,,}"-x86/bin/compact_dex_converter
     fi
 
+    export BINARIES_LOCATION="$AOSP_ROOT"/prebuilts/extract-tools/${HOST}-x86/bin
+
+    for version in 0_8 0_9; do
+        export PATCHELF_${version}="$BINARIES_LOCATION"/patchelf-"${version}"
+    done
+
+    if [ -z "$PATCHELF_VERSION" ]; then
+        export PATCHELF_VERSION=0_9
+    fi
+
     if [ -z "$PATCHELF" ]; then
-        export PATCHELF="$AOSP_ROOT"/prebuilts/extract-tools/${HOST}-x86/bin/patchelf
+        local patchelf_variable="PATCHELF_${PATCHELF_VERSION}"
+        export PATCHELF=${!patchelf_variable}
     fi
 
     # Extract existing boot.oats to the temp folder
