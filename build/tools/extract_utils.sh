@@ -1261,16 +1261,16 @@ function oat2dex() {
     local HOST="$(uname | tr '[:upper:]' '[:lower:]')"
 
     if [ -z "$BAKSMALIJAR" ] || [ -z "$SMALIJAR" ]; then
-        export BAKSMALIJAR="$AOSP_ROOT"/prebuilts/tools-custom/common/smali/baksmali.jar
-        export SMALIJAR="$AOSP_ROOT"/prebuilts/tools-custom/common/smali/smali.jar
+        export BAKSMALIJAR="$AOSP_ROOT"/prebuilts/extract-tools/common/smali/baksmali.jar
+        export SMALIJAR="$AOSP_ROOT"/prebuilts/extract-tools/common/smali/smali.jar
     fi
 
     if [ -z "$VDEXEXTRACTOR" ]; then
-        export VDEXEXTRACTOR="$AOSP_ROOT"/prebuilts/tools-custom/"${HOST,,}"-x86/bin/vdexExtractor
+        export VDEXEXTRACTOR="$AOSP_ROOT"/prebuilts/extract-tools/"${HOST,,}"-x86/bin/vdexExtractor
     fi
 
     if [ -z "$CDEXCONVERTER" ]; then
-        export CDEXCONVERTER="$AOSP_ROOT"/prebuilts/tools-custom/"${HOST,,}"-x86/bin/compact_dex_converter
+        export CDEXCONVERTER="$AOSP_ROOT"/prebuilts/extract-tools/"${HOST,,}"-x86/bin/compact_dex_converter
     fi
 
     export BINARIES_LOCATION="$AOSP_ROOT"/prebuilts/extract-tools/${HOST}-x86/bin
